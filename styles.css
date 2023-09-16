@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: rgb(124, 29, 111);
+    background-image: url('ramita-cerezo-naturaleza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tetris {
+    width: 360px;
+    border: 10px solid rgb(87, 59, 136);
+    padding: 20px;
+}
+
+#canvas {
+    width: 200px;
+    height: 440px;
+    background: rgb(249, 221, 218);
+    background: linear-gradient(161deg, rgba(249, 221, 218, 1) 0%, rgba(206, 120, 179, 1) 35%, rgba(87, 59, 136, 1) 100%);
+    position: relative;
+    color: #fff;
+}
+
+#canvas h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 200px;
+}
+
+.piece {
+    border: 1px solid white;
+    position: absolute;
+}
+
+#iniciar {
+    animation: blink .7s steps(2, iniciar) infinite;
+    background: #169927;
+    border-radius: 2px;
+    color: #202020;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+@keyframes blink {
+    to {
+        outline: #169927 solid 1px;
+    }
+}
+
+.red {
+    color: #000000;
+    font: bold 90%;
+    text-align: center;
+}
+
+.square {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    border: 1px solid white;
+}
+
+.type0 {
+    background-color: #f3e79b;
+
+}
+
+.type1 {
+    background-color: #fac484;
+}
+
+.type2 {
+    background-color: #f8a07e;
+}
+
+.type3 {
+    background-color: #eb7f86;
+}
+
+.type4 {
+    background-color: #ce6693;
+}
+
+.type5 {
+    background-color: #a059a0;
+}
+
+.type6 {
+    background-color: #5c53a5;
+}
+
+#next_shape {
+    position: relative;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border: 1px solid white;
+    width: 110px;
+    height: 110px;
+}
+
+#info {
+    background: rgb(249, 221, 218);
+    background: linear-gradient(161deg, rgba(249, 221, 218, 1) 0%, rgba(206, 120, 179, 1) 35%, rgba(87, 59, 136, 1) 100%);
+    color: #fff;
+    float: right;
+    width: 110px;
+    height: 420px;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TETRIS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  
+  <body>
+    <div id="tetris">
+      <div id="info">
+        <div id="next_shape"></div>
+        <p id="level">Nivel: <span></span></p>
+        <p id="lines">Líneas: <span></span></p>
+        <p id="score">Puntuación: <span></span></p>
+        <p id="time">Tiempo: <span></span></p>
+        <button id="iniciar">Iniciar</button>
+        <p class="red">Presiona<br> Espacio<br>para pausar<span></span></p>
+      </div>
+      <div id="canvas"></div>
+    </div>
+    <audio id="background" loop autoplay>
+      <source src="fondo.mp3">
+    </audio>
+    <audio id="game_over">
+      <source src="game_over.mp3">
+    </audio>
+    <audio id="linea_borrada">
+      <source src="linea.mp3">
+    </audio>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
